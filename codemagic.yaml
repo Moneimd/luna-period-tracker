@@ -1,0 +1,31 @@
+workflows:
+  testFlight:
+    name: hassous
+    integrations:
+      app_store_connect: Hassous Abdelmounaim
+    environment:
+      flutter: stable
+      ios_signing:
+        bundle_identifier: com.lunaperidtra.cker
+        provisioning_profiles:
+          - Provisioning_lunaperid
+        certificates:
+          - CertificateM
+    scripts:
+      - name: Get Flutter packages
+        script: flutter packages pub get
+      - name: Set up code signing
+        script: xcode-project use-profiles
+      - name: Build IPA
+        script: flutter build ipa --release --export-options-plist=/Users/builder/export_options.plist
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      email:
+        recipients:
+          - hassousalmonim@gmail.com
+        notify:
+          success: true
+          failure: true
+      app_store_connect:
+        auth: integration
