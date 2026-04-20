@@ -1,0 +1,41 @@
+name: trackpe
+description: "A period tracking Flutter application."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  provider: ^6.1.2
+
+  # Calendar widget
+  table_calendar: ^3.1.2
+
+  # Local storage
+  shared_preferences: ^2.3.2
+
+  # Date formatting (French locale)
+  intl: ^0.20.1
+
+  # Charts for statistics screen
+  fl_chart: ^0.69.0
+  url_launcher: ^6.3.2
+  google_mobile_ads: ^7.0.0
+  applovin_max: ^4.6.3
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
