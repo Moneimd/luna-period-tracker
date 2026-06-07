@@ -7,7 +7,7 @@ import 'package:trackpe/ads/src/multi_ads_factory.dart';
 class Constants {
   static const jsonConfigUrl =
       'https://drive.google.com/uc?export=download&id=1msgARTrEavnHGAfJZ7mp0OeH0LFQmMwP';
-
+//https://drive.google.com/file/d/1msgARTrEavnHGAfJZ7mp0OeH0LFQmMwP/view?usp=drive_link
   static Color mainColor = const Color(0xff33FD24);
 }
 

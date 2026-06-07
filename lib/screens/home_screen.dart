@@ -23,9 +23,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
-
+//https://sites.google.com/view/nxstunnel/home
   Future<void> _openPrivacy() async {
-    final uri = Uri.parse('https://sites.google.com/view/luna-period-tracker/home');
+    final uri = Uri.parse('https://sites.google.com/view/nxstunnel/home');
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
